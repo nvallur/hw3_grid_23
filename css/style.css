@@ -165,6 +165,7 @@ body{
   display:grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-row-gap: 15px;
+  grid-column-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -178,7 +179,7 @@ You can NOT assume that the .overview class will always be the first child.   */
 .container div:first-child{
   background-image: url(../images/header.jpg);
   grid-column-start: 1;
-  grid-column-end: span 3;
+  grid-column-end: span all;
 }
 
 
@@ -219,7 +220,7 @@ Begin on the 2nd, 3rd, 4th and 5th row respectively.
  .about-image,.method-image, .clients-image,.contact-image {
 
   grid-column-start: 1;
-  grid-column-end: span 3;
+  grid-column-end: span all;
   max-height: 600px;
   overflow: hidden;
 
