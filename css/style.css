@@ -113,8 +113,8 @@ nav ul li:hover{
 nav ul li:focus{
   text-decoration: underline;
 
-  /* step 3 */
-  border: 2px solid black;
+  /* step 3
+  border: 2px solid black; */
 }
 
 
@@ -147,7 +147,7 @@ body{
 
   /*step 3 */
 
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 
@@ -156,7 +156,9 @@ body{
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 /* Any element in focus should have a 2px solid border on all sides. */
 
-
+*:focus{
+  border: 2px solid black
+}
 
 
 
